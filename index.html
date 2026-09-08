@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jafar - Advertising Marketing Expert</title>
+    <style>
+        /* Base Styles */
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: #333;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* Layout */
+        .container {
+            width: min(1100px, calc(100% - 40px));
+            margin: 0 auto;
+        }
+
+        .section {
+            padding: 50px 0;
+        }
+
+        /* Hero section */
+        .hero {
+            background-color: #004d99;
+            color: #fff;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            margin: 0;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            margin: 12px 0 22px;
+        }
+
+        .hero-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .hero-images img,
+        .service img,
+        .testimonial img {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .hero-images img {
+            height: 160px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #e67e22;
+            color: #fff;
+            padding: 12px 22px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .cta-button:hover {
+            background-color: #d35400;
+        }
+
+        /* About section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .about-content img {
+            border-radius: 10px;
+        }
+
+        /* Services section */
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .service,
+        .testimonial,
+        form {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+        }
+
+        .service img {
+            height: 150px;
+            margin-bottom: 12px;
+        }
+
+        /* Contact form */
+        form {
+            display: grid;
+            gap: 12px;
+            max-width: 700px;
+        }
+
+        input,
+        textarea,
+        button {
+            font: inherit;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        button {
+            background: #004d99;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:hover {
+            background: #003b73;
+        }
+
+        /* Footer section */
+        footer {
+            background: #111;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 10px 0 15px;
+        }
+
+        .testimonial img {
+            height: 180px;
+            margin-bottom: 12px;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 60px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero section -->
+    <header class="hero">
+        <div class="container hero-content">
+            <h1>Boost Your Business with Jafar</h1>
+            <p>Expert in Social Media Advertising</p>
+            <div class="hero-images">
+                <img src="business-1.jpg" alt="Business strategy meeting">
+                <img src="business-2.jpg" alt="Marketing analytics dashboard">
+                <img src="business-3.jpg" alt="Team discussing growth plan">
+            </div>
+            <a href="#contact" class="cta-button">Get Started Today</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- About section -->
+        <section id="about" class="section">
+            <div class="container about-content">
+                <img src="nikita.jpg" alt="Jafar - Advertising Marketing Expert">
+                <div class="about-text">
+                    <h2>About Jafar</h2>
+                    <p>Hi, I'm Jafar, a passionate and results-driven advertising marketing expert. With years of experience in social media platforms like Facebook, Instagram, LinkedIn, and YouTube, I help businesses reach their target audience and boost their online presence.</p>
+                    <ul>
+                        <li>5+ years of experience in digital marketing.</li>
+                        <li>Worked with 50+ brands globally.</li>
+                        <li>Proven track record of increasing ROI by up to 200%.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services section -->
+        <section id="services" class="section">
+            <div class="container">
+                <h2>Services Offered</h2>
+                <div class="services-container">
+                    <div class="service">
+                        <img src="facebook-ad.jpg" alt="Facebook advertising campaign">
+                        <h3>Facebook Advertising</h3>
+                        <p>Targeted ads, audience analysis, and conversion tracking.</p>
+                    </div>
+                    <div class="service">
+                        <img src="instagram-marketing.jpg" alt="Instagram marketing content">
+                        <h3>Instagram Marketing</h3>
+                        <p>Creative content, influencer partnerships, and story ads.</p>
+                    </div>
+                    <div class="service">
+                        <img src="linkedin-campaign.jpg" alt="LinkedIn business campaign">
+                        <h3>LinkedIn Campaigns</h3>
+                        <p>B2B lead generation, professional networking, and content marketing.</p>
+                    </div>
+                    <div class="service">
+                        <img src="youtube-strategy.jpg" alt="YouTube marketing strategy">
+                        <h3>YouTube Strategy</h3>
+                        <p>Video creation, channel optimization, and ad campaigns.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials section -->
+        <section id="testimonials" class="section">
+            <div class="container">
+                <h2>What Clients Say</h2>
+                <div class="testimonial">
+                    <img src="client-business.jpg" alt="Happy business client">
+                    <p>"Jafar transformed our online presence and doubled our sales in just three months!" — <strong>Client Name</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Jafar</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="company">Company Name:</label>
+                    <input type="text" id="company" name="company">
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="container footer-content">
+            <p>Connect with Jafar on:</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">YouTube</a>
+            </div>
+            <p>&copy; 2024 Jafar - All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize after DOM is ready
+        document.addEventListener('DOMContentLoaded', () => {
+            setupLiveClock();
+            setupContactForm();
+            setupSmoothScroll();
+        });
+
+        // Show current time if the element exists
+        function setupLiveClock() {
+            const timeEl = document.getElementById('currentTime');
+            if (!timeEl) return;
+
+            const updateTime = () => {
+                timeEl.textContent = new Date().toLocaleString();
+            };
+
+            updateTime();
+            setInterval(updateTime, 1000);
+        }
+
+        // Improve contact form interaction
+        function setupContactForm() {
+            const form = document.querySelector('form');
+            if (!form) return;
+
+            const button = form.querySelector('button[type="submit"]');
+            const originalText = button ? button.textContent : 'Submit';
+
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+
+                if (!button) return;
+
+                button.disabled = true;
+                button.textContent = 'Sending...';
+
+                setTimeout(() => {
+                    form.reset();
+                    button.textContent = 'Message Sent';
+                }, 900);
+
+                setTimeout(() => {
+                    button.disabled = false;
+                    button.textContent = originalText;
+                }, 2200);
+            });
+        }
+
+        // Add smooth scrolling for internal links
+        function setupSmoothScroll() {
+            document.querySelectorAll('a[href^="#"]').forEach((link) => {
+                link.addEventListener('click', (event) => {
+                    const target = document.querySelector(link.getAttribute('href'));
+                    if (!target) return;
+
+                    event.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                });
+            });
+        }
+    </script>
+</body>
+</html>
